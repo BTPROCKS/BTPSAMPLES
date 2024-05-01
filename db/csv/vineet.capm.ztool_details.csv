@@ -1,0 +1,4 @@
+ tool_id     ,werks       ,suppl_code  ,part_num    ,counter_num ,  quote_num       ,  part_descr      ,  part_rev_id     ,  tool_identifier ,  description     ,  uom             ,  type            ,  version         ,  zcomment        ,  coo             ,  quantity        ,  unit_cost       ,  total_cost      ,  currency        ,  mat_cre_id      ,  mat_num         ,  archived        ,  created_by      ,  created_at      ,  last_changed_by ,  last_changed_at 
+Tool set,SE10,1000000000,1000004021AA-001,1,2044400800,Tailgate Trim,1,Toolset,Toolset for Tailgate Trim,PC,tool,A,,INDIA,1,100,120,INR,Y,,N,,,,
+Sub Tool,SE10,1000000000,1000004021AA-001,2,2044400800,Tailgate Trim,1,Fixture,Merging tool,PC,subtool,A,,INDIA,1,50,50,INR,Y,,N,,,,
+Sub Tool,SE10,1000000000,1000004021AA-001,3,2044400800,Tailgate Trim,1,Toolset,Alignment,PC,subtool,A,,INDIA,1,50,50,INR,Y,,N,,,,
