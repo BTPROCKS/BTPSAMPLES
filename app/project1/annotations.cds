@@ -1,0 +1,1 @@
+using tool_register as service from '../../srv/ztool_detail-srv';
