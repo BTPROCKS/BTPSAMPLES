@@ -11,9 +11,9 @@
     "description": "{{appDescription}}",
     "resources": "resources.json",
     "sourceTemplate": {
-      "id": "@sap/generator-fiori:fpm",
-      "version": "1.13.3",
-      "toolsId": "36ffe603-dc29-41e2-a6bc-125fb4c110e1"
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.13.4",
+      "toolsId": "56cb09b9-0505-44f8-a5b2-06b78c5edf68"
     },
     "dataSources": {
       "mainService": {
@@ -45,7 +45,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.123.1",
+      "minUI5Version": "1.123.2",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
@@ -86,25 +86,58 @@
       "config": {},
       "routes": [
         {
-          "name": "tool_detailsMain",
           "pattern": ":?query:",
-          "target": "tool_detailsMain"
+          "name": "tool_detailsList",
+          "target": "tool_detailsList"
+        },
+        {
+          "pattern": "tool_details({key}):?query:",
+          "name": "tool_detailsObjectPage",
+          "target": "tool_detailsObjectPage"
         }
       ],
       "targets": {
-        "tool_detailsMain": {
+        "tool_detailsList": {
           "type": "Component",
-          "id": "tool_detailsMain",
-          "name": "sap.fe.core.fpm",
+          "id": "tool_detailsList",
+          "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "navigation": {},
               "contextPath": "/tool_details",
-              "viewName": "vineet.tool.project1.ext.main.Main"
+              "variantManagement": "Page",
+              "navigation": {
+                "tool_details": {
+                  "detail": {
+                    "route": "tool_detailsObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tool_detailsObjectPage": {
+          "type": "Component",
+          "id": "tool_detailsObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/tool_details"
             }
           }
         }
       }
     }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
   }
 }

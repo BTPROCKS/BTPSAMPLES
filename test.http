@@ -1,0 +1,10 @@
+###
+POST http://localhost:4004/tool_register/MyAction
+Content-Type: application/json
+
+{
+    "input":{
+        "field1":123,
+        "field2":"Value"
+    }
+}

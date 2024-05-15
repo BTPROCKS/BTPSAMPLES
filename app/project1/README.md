@@ -1,18 +1,18 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Fri May 10 2024 11:17:43 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Wed May 15 2024 11:29:32 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
-|**App Generator Version**<br>1.13.3|
+|**App Generator Version**<br>1.13.4|
 |**Generation Platform**<br>SAP Business Application Studio|
-|**Template Used**<br>Custom Page V4|
+|**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/odata/v4/tool_register/
 |**Module Name**<br>project1|
 |**Application Title**<br>Tool Register|
 |**Namespace**<br>vineet.tool|
 |**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.123.1|
+|**UI5 Version**<br>1.123.2|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
